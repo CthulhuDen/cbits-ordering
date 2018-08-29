@@ -1,0 +1,11 @@
+name:                cbits-ordering
+
+library:
+  include-dirs:
+  - cbits
+  c-sources:
+  - cbits/the_dependency.c
+  - cbits/a_dependent.c
+  source-dirs:       src
+  dependencies:
+  - base >= 4.7 && < 5

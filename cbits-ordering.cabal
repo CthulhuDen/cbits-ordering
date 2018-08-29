@@ -1,0 +1,27 @@
+cabal-version: >= 1.10
+
+-- This file has been generated from package.yaml by hpack version 0.29.7.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 69f32b8be6a4e3958cd8198124aec815d904a1a6ed1821783b3ab2fb1d80aa28
+
+name:           cbits-ordering
+version:        0.0.0
+build-type:     Simple
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_cbits_ordering
+  hs-source-dirs:
+      src
+  include-dirs:
+      cbits
+  c-sources:
+      cbits/a_dependent.c
+      cbits/the_dependency.c
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
